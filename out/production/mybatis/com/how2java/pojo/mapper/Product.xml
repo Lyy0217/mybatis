@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace="com.how2java.pojo" 表示命名空间，在后续调用sql语句的时候会用到它-->
+<mapper namespace="com.how2java.pojo.mapper">
+
+    <!--
+    1、listCategory 进行标示以供后续代码调用
+    2、resultType="Product" 表示返回的数据和Product关联起来，
+    这里本应该使用的是 com.how2java.pojo.Product, 但是在mybatis-config.xml中配置了别名，所以直接使用Product就行了
+
+    -->
+    <select id="listProduct" resultType="Product">
+            select * from   product_
+    </select>
+
+
+    <resultMap type="Product" id="productBean">
+        <id column="pid" property="id"/>
+        <result column="pname" property="name"/>
+        <result column="price" property="price"/>
+
+        <!-- 多对一的关系 -->
+        <!-- property: 指的是属性名称, javaType：指的是属性的类型 -->
+        <association property="category" javaType="Category">
+            <id column="cid" property="id"/>
+            <result column="cname" property="name"/>
+        </association>
+    </resultMap>
+
+    <!-- 根据id查询Product, 关联将Orders查询出来 -->
+    <select id="ManyByOneListProduct" resultMap="productBean">
+            select c.*, p.*, c.id 'cid', p.id 'pid', c.name 'cname', p.name 'pname' from product_ p left join category_ c on c.id = p.cid
+    </select>
+
+    <select id="getProduct" resultMap="productBean">
+            select c.*, p.*, c.id 'cid', p.id 'pid', c.name 'cname', p.name 'pname'
+                from product_ p
+                left join category_ c on c.id = p.cid
+            where p.id = #{id}
+    </select>
+
+</mapper>
