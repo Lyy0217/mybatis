@@ -42,4 +42,88 @@
             where p.id = #{id}
     </select>
 
+    <!--    动态sql语句的使用-->
+    <select id="DynamicSqlListProduct" resultType="Product">
+        select * from product_
+        <where>
+            <if test="name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="price != null and price != 0">
+                and price > #{price}
+            </if>
+        </where>
+
+    </select>
+
+    <!--    set标签中记得要有逗号，不然会报错-->
+    <update id="DynamicSqlUpdateProduct" parameterType="Product">
+        update product_
+        <set>
+            <if test="name != null">name=#{name},</if>
+            <if test="price != null">price=#{price}</if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--    trime标签替换-->
+    <select id="TrimDynamicSqlListProduct" resultType="Product">
+        select * from product_
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="price != null and price != 0">
+                and price > #{price}
+            </if>
+        </trim>
+
+    </select>
+
+
+    <update id="TrimDynamicSqlUpdateProduct" parameterType="Product">
+        update product_
+        <trim prefix="set" suffixOverrides=",">
+            <if test="name != null">name=#{name},</if>
+            <if test="price != null">price=#{price}</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <!--    choose标签：其作用是： 提供了任何条件，就进行条件查询，否则就使用id>1这个条件。-->
+    <select id="chooseDynamicSqlListProduct" resultType="Product">
+        select * from product_
+        <where>
+            <choose>
+                <when test="name != null">
+                    and name like concat('%',#{name},'%')
+                </when>
+
+                <when test="price != null and price > 0">
+                    and price > #{price}
+                </when>
+
+                <otherwise>
+                    id > 1
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--    foreach标签    -->
+    <select id="ForeachDynamicSqlListProduct" resultType="product">
+        select * from product_
+        WHERE id in
+        <foreach collection="list" item="item" index="index"
+                 open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <!--    bind标签   -->
+    <select id="bindDynamicSqlListProduct" resultType="Product">
+        <bind name="likename" value="'%' + name + '%'"/>
+        select * from product_ where name like #{likename}
+    </select>
+
 </mapper>
