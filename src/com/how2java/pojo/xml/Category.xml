@@ -6,6 +6,9 @@
 <!--namespace="com.how2java.pojo" 表示命名空间，在后续调用sql语句的时候会用到它-->
 <mapper namespace="com.how2java.pojo.mapper">
 
+    <!--    启动对Category对象的二级缓存-->
+    <cache/>
+
     <!--
     1、listCategory 进行标示以供后续代码调用
     2、resultType="Category" 表示返回的数据和Category关联起来，
@@ -15,8 +18,13 @@
 
     <!--    list-->
     <select id="listCategory" resultType="Category">
-            select * from   category_
-     </select>
+        select * from category_
+
+        <!--分页工作已由插件：PageHelper做了，不需要自己手写了 -->
+        <!--        <if test="start != null and cnt != null">-->
+        <!--            limit #{start},#{cnt}-->
+        <!--        </if>-->
+    </select>
 
     <!--    增-->
     <insert id="insertCategory" parameterType="Category">

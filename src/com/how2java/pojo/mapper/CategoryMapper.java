@@ -4,6 +4,7 @@ import com.how2java.pojo.Category;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Many;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -47,4 +48,15 @@ public interface CategoryMapper {
             ))
     })
     public List<Category> OneByManyList();
+
+    //    分页
+    @Select(" select * from category_")
+    public List<Category> listByPage();
+
+
+//    public List<Category> listByPage(@Param("start") int start, @Param("cnt") int cnt);
+
+
+    @Select(" select count(*) from category_ ")
+    public int count();
 }

@@ -26,11 +26,30 @@ public class TestMapper {
 
             //根据session获取mapper
             CategoryMapper mapper = session.getMapper(CategoryMapper.class);
+
+
+            List<Category> cs = session.selectList("listCategory");
+            for (Category c : cs) {
+                session.delete("deleteCategory", c);
+            }
+            for (int i = 0; i < 100; i++) {
+                Category c = new Category();
+                c.setName("category name " + i);
+                session.insert("insertCategory", c);
+            }
+            List<Category> cs2 = session.selectList("listCategory");
+            for (Category c : cs2) {
+                System.out.println(c.getName());
+            }
 //            ProductMapper mapper = session.getMapper(ProductMapper.class);
 //            List<Product> productList = mapper.ManyByOneListProduct();
-//
-//            for (Product p : productList) {
-//                System.out.println(p + "\t对应的分类是:\t" + p.getCategory().getName());
+//            List<Category> categories = mapper.OneByManyList();
+//            for (Category c : categories) {
+//                System.out.println(c.getName());
+//                List<Product> ps = c.getProductList();
+//                for (Product p : ps) {
+//                    System.out.println("\t" + p.getName());
+//                }
 //            }
 
             //        add(mapper);
@@ -41,7 +60,17 @@ public class TestMapper {
 
 
 //            listOrder(session);
-            listAll(mapper);
+//            listAll(mapper);
+
+//            Category c1 = new Category();
+//            c1.setName("长度够短的名称");
+//            mapper.add(c1);
+//
+//            Category c2 = new Category();
+//            c2.setName("超过最大长度30的名称超过最大长度30的名称超过最大长度30的名称超过最大长度30的名称超过最大长度30的名称超过最大长度30的名称");
+//            mapper.add(c2);
+//
+//            listAll(mapper);
 
             session.commit();
             session.close();
