@@ -29,9 +29,14 @@
 
     <!--    映射Category.xml -->
     <mappers>
-        <mapper resource="com/how2java/pojo/mapper/Category.xml"/>
-        <mapper resource="com/how2java/pojo/mapper/Product.xml"/>
-        <mapper resource="com/how2java/pojo/mapper/Order.xml"/>
-        <mapper resource="com/how2java/pojo/mapper/OrderItem.xml"/>
+        <mapper resource="com/how2java/pojo/xml/Category.xml"/>
+        <mapper resource="com/how2java/pojo/xml/Product.xml"/>
+        <mapper resource="com/how2java/pojo/xml/Order.xml"/>
+        <mapper resource="com/how2java/pojo/xml/OrderItem.xml"/>
+        <mapper class="com.how2java.pojo.mapper.CategoryMapper"/>
+        <mapper class="com.how2java.pojo.mapper.ProductMapper"/>
+        <mapper class="com.how2java.pojo.mapper.OrderMapper"/>
+        <mapper class="com.how2java.pojo.mapper.OrderItemMapper"/>
     </mappers>
+
 </configuration>

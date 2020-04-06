@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b8ce1ce-f942-427e-b1c6-cae6a819c917" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/how2java/test/TestDynamicSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/how2java/pojo/dynamic/CategoryDynaSqlProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/DynamicCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/how2java/test/TestMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/mapper/Product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/mapper/Product.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/Product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/Product.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/how2java/test/TestProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/test/TestProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/mapper/Category.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/mapper/Order.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/mapper/OrderItem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatis/com/how2java/pojo/mapper/Product.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mybatis/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/Category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/pojo/xml/Category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/Order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/pojo/xml/Order.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/pojo/xml/OrderItem.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/how2java/pojo/mapper/Product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/pojo/xml/Product.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mybatis-config.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,14 +75,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="766">
+              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/Category.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/dynamic/CategoryDynaSqlProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItemMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/Category.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
@@ -98,7 +154,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/Product.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/Product.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
               <caret line="123" column="41" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="41" />
@@ -115,13 +171,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestDynamicSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+            <state relative-caret-position="216">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#421#445#0" expanded="true" />
               </folding>
             </state>
@@ -129,7 +184,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/Order.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/CategoryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/DynamicCategoryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/ProductMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/Order.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="502">
               <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
@@ -138,7 +229,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItem.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/OrderItem.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
@@ -162,7 +253,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestProduct.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+              <caret line="50" column="5" selection-start-line="42" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#371#395#0" expanded="true" />
@@ -174,8 +265,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="96">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#162#163#0" expanded="true" />
                 <element signature="e#195#196#0" expanded="true" />
@@ -304,13 +395,21 @@
         <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/Order.xml" />
         <option value="$PROJECT_DIR$/src/com/how2java/pojo/OrderIterm.java" />
         <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItem.xml" />
-        <option value="$PROJECT_DIR$/src/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/com/how2java/test/TestOrder.java" />
         <option value="$PROJECT_DIR$/src/com/how2java/pojo/Order.java" />
         <option value="$PROJECT_DIR$/src/com/how2java/pojo/Product.java" />
         <option value="$PROJECT_DIR$/src/com/how2java/test/TestProduct.java" />
         <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/Product.xml" />
         <option value="$PROJECT_DIR$/src/com/how2java/test/TestDynamicSql.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItemMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderMapper.java" />
+        <option value="$PROJECT_DIR$/src/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/ProductMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/pojo/dyanmc.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/pojo/dynamic/CategoryDynaSqlProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/pojo/mapper/DynamicCategoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/test/TestMapper.java" />
       </list>
     </option>
   </component>
@@ -318,7 +417,9 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -357,6 +458,14 @@
               <item name="how2java" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="how2java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
@@ -440,7 +549,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDynamicSql">
+  <component name="RunManager" selected="Application.TestMapper">
     <configuration name="TestAddMybatis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.how2java.test.TestAddMybatis" />
       <module name="mybatis" />
@@ -467,8 +576,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMybatis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.how2java.test.TestMybatis" />
+    <configuration name="TestMapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.how2java.test.TestMapper" />
       <module name="mybatis" />
       <extension name="coverage">
         <pattern>
@@ -507,19 +616,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestMybatis" />
       <item itemvalue="Application.TestProduct" />
       <item itemvalue="Application.TestAddMybatis" />
       <item itemvalue="Application.TestOrder" />
       <item itemvalue="Application.TestDynamicSql" />
+      <item itemvalue="Application.TestMapper" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMapper" />
         <item itemvalue="Application.TestDynamicSql" />
         <item itemvalue="Application.TestOrder" />
         <item itemvalue="Application.TestProduct" />
         <item itemvalue="Application.TestAddMybatis" />
-        <item itemvalue="Application.TestMybatis" />
       </list>
     </recent_temporary>
   </component>
@@ -533,12 +642,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586070374610</updated>
-      <workItem from="1586070376220" duration="15855000" />
+      <workItem from="1586070376220" duration="20302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15855000" />
+    <option name="totallyTimeSpent" value="20302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -549,7 +658,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14590965" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11782662" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -559,7 +668,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42424244" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40229884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39916405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -577,6 +686,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/how2java/test/TestMapper.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/how2java/test/TestMapper.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -644,28 +771,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItem.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/OrderItem.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/Category.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/Category.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/Order.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/Order.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
@@ -678,27 +798,6 @@
           <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -758,7 +857,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+          <caret line="50" column="5" selection-start-line="42" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#371#395#0" expanded="true" />
@@ -780,7 +879,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/Product.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/xml/Product.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="123" column="41" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="41" />
@@ -789,11 +888,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestDynamicSql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#421#445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/OrderItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/dynamic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/dyanmc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/dynamic/CategoryDynaSqlProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/pojo/mapper/DynamicCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
